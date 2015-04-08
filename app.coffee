@@ -1,11 +1,8 @@
 http = require("http")
-
+port = process.env.PORT || 1337
 server = http.createServer((req, res)->
-  res.write "<h1>Wah Gwon People!<h1>"
-  res.write "<h1>This is your first server in NodeJs up & running!<h1>"
-  res.write "<h1>Write in CoffeeScript!<h1>"
-  res.end()
-  console.log 'Wah Gwon People! This is your first server in NodeJs up & running!'
+  res.writeHead(200, {"Content-Type": "text/plain"});
+  res.end("Wah Gwon People! This is your first server in NodeJs up & running! Write in CoffeeScript!")
 )
-server.listen process.env.PORT || 3000
+server.listen port
 console.log 'server running on port 3000'
