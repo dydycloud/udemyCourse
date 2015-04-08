@@ -9,8 +9,8 @@
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": "0.12.x",
-    "npm": "2.5.x"
+    "node": "0.12.0",
+    "npm": "2.5.1"
   },
   "dependencies": {
     "coffee-script": "^1.9.1"
