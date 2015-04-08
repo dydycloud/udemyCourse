@@ -7,5 +7,5 @@ server = http.createServer((req, res)->
   res.end()
   console.log 'Wah Gwon People! This is your first server in NodeJs up & running!'
 )
-server.listen 3000
+server.listen process.env.PORT || 3000
 console.log 'server running on port 3000'
